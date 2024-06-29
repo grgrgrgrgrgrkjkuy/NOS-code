@@ -450,12 +450,12 @@ Buttonclickshut:ChangeProperties({
 
 Commandtest:ChangeProperties({
   Size = UDim2.fromScale(200, 200);
- TextTransparency = 0;
+ TextTransparency = 0.7;
 })
 
 Commandstext:ChangeProperties({
   Size = UDim2.fromScale(200, 200);
- TextTransparency = 0;
+ TextTransparency = 0.7;
 })
 
 
