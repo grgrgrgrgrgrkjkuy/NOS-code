@@ -1,4 +1,5 @@
 
+
 local Screen = GetPartFromPort(1, 'TouchScreen')
 Screen:ClearElements()
 
@@ -13,12 +14,7 @@ local Disksavenote = GetPartFromPort(5, "Disk")
 
 local Savenote = "Disknote"
 
-
-
-
-
 TriggerPort(2)
-
 
 wait(6.5)
 
@@ -121,37 +117,37 @@ Startuplogo2:ChangeProperties({
  Text = ' |          | ';
 })
 
-wait(2)
+wait(0.5)
 
 Startuplogo2:ChangeProperties({
  Text = ' |▮        | ';
 })
 
-wait(3)
+wait(1)
 
 Startuplogo2:ChangeProperties({
  Text = ' |▮▮      | ';
 })
 
-wait(5)
+wait(0.5)
 
 Startuplogo2:ChangeProperties({
  Text = ' |▮▮▮    | ';
 })
 
-wait(4)
+wait(1.5)
 
 Startuplogo2:ChangeProperties({
  Text = ' |▮▮▮▮  | ';
 })
 
-wait(1)
+wait(0.5)
 
 Startuplogo2:ChangeProperties({
  Text = ' |▮▮▮▮▮| ';
 })
 
-wait(0.5)
+wait(0.2)
 
 Startuplogo2:ChangeProperties({
  Text = ' DONE ';
@@ -227,8 +223,8 @@ local Commandtest = Screen:CreateElement('TextLabel', {
 
 local function Shutdown()
       Screen:ClearElements()
-      TriggerPort(1)
-      Speaker:ClearSounds()
+  TriggerPort(1)
+   Speaker:ClearSounds()
 end
 
 local function Note()
@@ -856,6 +852,15 @@ Buttonclicknote.MouseButton1Click:Connect(function()
 TriggerPort(3)
 Note()
 end)
+
+
+
+
+
+
+
+
+
 
 
 
