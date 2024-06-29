@@ -1,5 +1,4 @@
 
-
 local Screen = GetPartFromPort(1, 'TouchScreen')
 Screen:ClearElements()
 
@@ -313,6 +312,7 @@ local Exitnote = Screen:CreateElement('TextButton', {
 
 
 Exitnote.MouseButton1Click:Connect(function()
+
 TriggerPort(3)
 
 
@@ -389,6 +389,7 @@ local Exittextnoteno = Screen:CreateElement('TextButton', {
 
 Exittextnoteno.MouseButton1Click:Connect(function()
 
+TriggerPort(3)
 
 Exittextnote:ChangeProperties({
   Size = UDim2.fromScale(0, 0);
@@ -852,25 +853,5 @@ Buttonclicknote.MouseButton1Click:Connect(function()
 TriggerPort(3)
 Note()
 end)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
